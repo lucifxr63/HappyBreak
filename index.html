@@ -7,31 +7,182 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sitio web Responsivo Caffe</title>
     <!-- link de estilos-->
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="./assets/styles/main.css">
     <!-- link de iconos-->
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
 </head>
 
 <body>
     <!-- Link de JS-->
-    <script src="main.js"></script>
+
     <header>
         <a href="#" class="logo">
-            <img src="img/logo.png" alt="">
+            <img src="./assets/images/logo.png" alt="">
         </a>
         <!-- Menu-Icon -->
         <i class="bx bx-menu" id="menu-icon"></i>
         <!-- Links -->
         <ul class="navbar">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#products">Products</a></li>
-            <li><a href="#customers">Customers</a></li>
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#about">Sobre Nosotros</a></li>
+            <li><a href="#products">Productos</a></li>
+            <li><a href="#customers">Opiniones</a></li>
         </ul>
         <!-- Icon -->
-        <div class="header-icon"></div>
+        <div class="header-icon">
+            <i class="bx bx-cart-alt"></i>
+            <i class="bx bx-search" id="search-icon"></i>
+        </div>
+        <!-- Search Box -->
+        <div class="search-box">
+            <input type="search" name="" id="" placeholder="Buscar aqui...">
+        </div>
+
     </header>
+    <!-- Home -->
+    <section class="home" id="home">
+        <div class="home-text">
+            <h1>Empieza tu dia <br> con un cafe!</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident</p>
+            <a href="#" class="btn">Compra ahora</a>
+        </div>
+        <div class="home-img">
+            <img src="./assets/images/main.png" alt="">
+        </div>
+
+    </section>
+    <!-- Sobre nosotros -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="./assets/images/about.jpg" alt="">
+        </div>
+        <div class="about-text">
+            <h2>Nosotros!</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus facilis aliquid accusantium.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus facilis aliquid accusantium.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus facilis aliquid accusantium.</p>
+            <a href="#" class="btn">Saber mas..</a>
+        </div>
+    </section>
+    <!-- productos -->
+    <section class="products" id="products">
+        <div class="heading">
+            <h2>Productos populares:</h2>
+        </div>
+        <!-- Container -->
+        <div class="products-container">
+            <div class="box">
+                <img src="./assets/images/p1.png" alt="">
+                <h3>Americano Pure</h3>
+                <div class="content">
+                    <span>$25</span>
+                    <a href="#">Agregar al carro</a>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <img src="./assets/images/p2.png" alt="">
+                <h3>Americano Pure</h3>
+                <div class="content">
+                    <span>$25</span>
+                    <a href="#">Agregar al carro</a>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <img src="./assets/images/p3.png" alt="">
+                <h3>Americano Pure</h3>
+                <div class="content">
+                    <span>$25</span>
+                    <a href="#">Agregar al carro</a>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <img src="./assets/images/p4.png" alt="">
+                <h3>Americano Pure</h3>
+                <div class="content">
+                    <span>$25</span>
+                    <a href="#">Agregar al carro</a>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <img src="./assets/images/p5.png" alt="">
+                <h3>Americano Pure</h3>
+                <div class="content">
+                    <span>$25</span>
+                    <a href="#">Agregar al carro</a>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <img src="./assets/images/p6.png" alt="">
+                <h3>Americano Pure</h3>
+                <div class="content">
+                    <span>$25</span>
+                    <a href="#">Agregar al carro</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- Customers -->
+    <section class="customers" id="customers">
+        <div class="heading">
+            <h2>Nuestros Clientes:</h2>
+        </div>
+        <!-- Container -->
+        <div class="customers-container">
+            <div class="box">
+                <div class="stars">
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star-half"></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus facilis aliquid accusantium.</p>
+                <h2>Juanito Perez</h2>
+                <img src="./assets/images/rev1.jpg" alt="">
+            </div>
+            <div class="box">
+                <div class="stars">
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star-half"></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus facilis aliquid accusantium.</p>
+                <h2>Vicente 123</h2>
+                <img src="./assets/images/rev2.jpg" alt="">
+            </div>
+            <div class="box">
+                <div class="stars">
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star-half"></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus facilis aliquid accusantium.</p>
+                <h2>Matias chinaski</h2>
+                <img src="./assets/images/rev3.jpg" alt="">
+            </div>
+        </div>
+    </section>
 
 </body>
+<script src="./assets/js/main.js"></script>
 
 </html>
