@@ -30,14 +30,12 @@ if ($result->num_rows > 0) {
         session_start();
         $_SESSION['user_id'] = $user['ID_Usuarios'];
         $_SESSION['user_name'] = $user['Nombre'];
-        echo "Inicio de sesión exitoso.";
-        // Redireccionar a la página de inicio
-        header("Location: inicio.php");
+        echo "<script>alert('Inicio de sesión exitoso.'); window.location.href='../../inicio.php';</script>";
     } else {
-        echo "Contraseña incorrecta.";
+        echo "<script>alert('Contraseña incorrecta.'); window.location.href='../../login.html';</script>";
     }
 } else {
-    echo "No se encontró una cuenta con ese email.";
+    echo "<script>alert('No se encontró una cuenta con ese email.'); window.location.href='../../login.html';</script>";
 }
 
 $stmt->close();

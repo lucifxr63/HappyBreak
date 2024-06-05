@@ -26,7 +26,7 @@ $stmt->execute();
 $result = $stmt->get_result();
 
 if ($result->num_rows > 0) {
-    echo "El email ya está registrado.";
+    echo "<script>alert('El email ya está registrado.'); window.location.href='../../registro.html';</script>";
 } else {
     // Insertar nuevo usuario
     $sql = "INSERT INTO Usuarios (Nombre, Usuario, Correo, Contrasena) VALUES (?, ?, ?, ?)";
@@ -34,9 +34,7 @@ if ($result->num_rows > 0) {
     $stmt->bind_param("ssss", $nombre, $usuario, $correo, $contrasena);
 
     if ($stmt->execute()) {
-        echo "Registro exitoso.";
-        // Redirigir al usuario a la página de inicio de sesión
-        header("Location: login.html");
+        echo "<script>alert('Registro exitoso.'); window.location.href='../../login.html';</script>";
     } else {
         echo "Error: " . $stmt->error;
     }
